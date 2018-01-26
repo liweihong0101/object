@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button id="btn">喂所有小狗吃饭</button>
+<script>
+  /*
+  * 4.2、原型链
+  * */
+  //定义：每一个构造函数都有一个属性叫做prototype，指向一个对象，当这个构造函数被new的时候，
+  // 它的每一个实例的__proto__属性，也指向这个对象
+  
+  function People(name, age, sex) {
+    this.name = name;
+    this.age = age;
+    this.sex = sex;
+  }
+  
+  //  People.prototype = {
+  //    "teacher": "考拉",
+  //    "IQ": "180",
+  //    "gongzi": "30k"
+  //  };
+  var xiaoming = new People('小明', 12, '男');
+  
+  //  console.log(People.prototype === xiaoming.__proto__);  //true
+  console.log(People.prototype);
+  //  console.log(xiaoming);
+  //  console.log(xiaoming.teacher);
+  
+  //每一个函数天生就有prototype属性，指向一个空对象，也就是说，我们不需要定义这个prototype属性，
+  //任何一个函数只要写出来，他就有了prototype这个属性，这个属性对它自己而言没有任何意义！它的唯一的
+  //意义是儿子们的指明灯！构造函数的prototype指向谁，它的儿子们的__proto__就指向谁
+  //  我们称People.prototype是People构造函数的"原型"，People.prototype是小明的原型对象
+  //__proto__是神器，有原型链查找功能，xiaoming身上没有某个属性的时候，系统会沿着__proto__
+  //去寻找它的原型对象身上有没有这个属性。
+  
+  /*
+  * 4.3、方法的定义
+  * */
+  
+  People.prototype.sayHello = function () {
+    alert('你好我是' + this.name + '我今年' + this.age)
+  }
+  var xiaoqing = new People('xiaoqing', 12, '男');
+  xiaoqing.sayHello();
+  
+  /*
+  * 构造函数和实例的关系
+  * */
+  function Dog(name, tizhong) {
+    this.name = name;
+    this.tizhong = tizhong;
+    dogArr.push(this)
+  }
+  
+  Dog.prototype.chifan = function () {
+    alert(this.name + '正在吃饭');
+    this.tizhong += 10
+  };
+  var dogArr = [];
+  var xiaogou = new Dog('xiaogou',20);
+  var xiaobai = new Dog('xiaobai',120);
+  var dahuang = new Dog('dahuang',300);
+  xiaogou.chifan();
+  
+  var btn = document.getElementById('btn');
+  btn.onclick = function () {
+    for(var i = 0; i < dogArr.length; i++){
+      dogArr[i].chifan();
+    }
+  }
+  
+  
+</script>
+</body>
+</html>

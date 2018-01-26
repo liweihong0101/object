@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<script>
+  //  var obj = {
+  //    xingming: '小马哥',
+  //    age: 12,
+  //    sex: '男',
+  //    sayHello: function () {
+  //      alert('你好,我叫做' + this.xingming + '!我的年龄是' + this.age);
+  //    }
+  //  };
+  //  obj.sayHello();
+  //当一个函数是当作对象的方法被调用的时候，这个函数里面的this表示这个对象
+  //现在我们调用函数的时候，是通过obj打点调用的，所以现在这个sayhello函数的上下文就是
+  //这个obj对象。即sayHello函数内部的this指向obj
+  
+  //但是千万不要认为写在对象中的方法，上下文一定是这个对象，比如：
+  //  var fn = obj.sayHello;
+  //  fn();   //您好，我叫做undefind,我的年龄是undefind 此时this指window
+  
+  //  //所有全局变量都是window对象的属性
+  //  var a = 100;
+  //  var b = 200;
+  //  var c = 200;
+  //  var d = 200;
+  //  var e = 200;
+  //  var f = function () {
+  //    alert(a + b)
+  //  }
+  //  console.log(window)
+  
+  //函数的上下文是什么，取决于函数的调用，而不是函数如何定义的. 换句话说，函数的上下文是函数的调
+  //用时表现的性质，不是函数定义的时候写死的性质
+  
+  /*
+  * 二、函数的上下文
+  * */
+  //  规律1：函数用圆括号直接调用，函数的上下文是window对象 函数里this表示window
+  //所有的全局变量是window对象的属性，所有函数内部的变量不是任何东西的属性，存放在堆内存中
+  //  function fun() {
+  //    var a = 100;
+  //    alert(this.a)
+  //  }
+  
+  //  var a = 200;
+  //  fun();  //200
+  
+  //规律2；函数如果作为一个对象的方法，对象打点调用，函数的上下文就是这个对象
+  //  var obj = {
+  //    "a": 10,
+  //    "b": 20,
+  //    //此时给这个对象增加一个方法，值就是fun函数
+  //    "c": fun
+  //  };
+  //  var a = 90;
+  //  obj.c()   //10   我们要看清楚函数执行的时候，是怎么执行的！！！ 现在不是
+  //圆括号直接执行，而是一个对象的打点调用所以函数的上下文就是obj对象
+  //  var fff = obj.c;
+  //  fff()  //undefind
+  
+  //  //规律3： 函数是事件处理函数，函数的上下文就是触发这个事件的对象
+  //  var box1 = document.getElementById('box1');
+  //  var box2 = document.getElementById('box2');
+  //  var box3 = document.getElementById('box3');
+  //  function fun() {
+  //    this.style.backgroundColor = 'red';
+  //  }
+  //  box1.onclick = fun;
+  //  box2.onclick = fun;
+  //  box3.onclick = fun;
+  
+  //规律4：定时器调用函数，this指向window
+  //  function fun() {
+  //    var a = 1;
+  //    alert(this.a)
+  //  }
+  //  var a = 888;
+  //  setInterval(fun,1000);
+  //  //函数fun被定时器调用，函数的上下文是window
+  //  setInterval(function () {
+  //    fun();   //这个时候fun的是圆括号调用符合规律1
+  //  },1000)
+  //例子:
+  //  var box1 = document.getElementById('box1');
+  //  box1.onclick = function () {
+  //    var that = this;  //备份上下文
+  //    setTimeout(function () {
+  //      that.style.backgroundColor = 'red';
+  //    },1000)
+  //  }
+  
+  //  //规律5：数组中存放的函数，被数组索引调用的函数，此时函数的上下文this是这个数组
+  //  function fun0(a,b,c,d,e,f) {
+  //    alert(this.length)
+  //    console.log(this === arr);  //true
+  //  }
+  //  var arr = [fun0, '东风', '五条'];
+  //  var lenth = 10;
+  //  arr[0]();
+  //在函数内部如果想调用函数自身，用this是不可能的，必须使用arguments.callee
+  
+  //  call()和apply()  这两个是函数的方法，只有函数可以调用，表示用指定的上下文执行这个函数。
+  //  例子
+  //  function fn() {
+  //    alert(this.name)
+  //  }
+  //  var obj = {
+  //    name: "jsLi",
+  //    age: 27
+  //  }
+  //  fn.call(obj);
+  //  上面有一个函数fn，我们现在就是耍无赖，必须让fun里面的this是obj，此时可以用call、apply来指定上下文，call是呼叫的意思，
+  //  apply是应用的意思
+  //函数.call(this,str1,str2,...)   使用字符串逗号隔开，罗列传参数
+  //函数.apply(this,Array)  参数使用数组传参数
+  
+  //  console.log(Math.max.apply(window, [1, 23, 12314, 121, 123142]));
+  
+  /*
+  * 三、构造函数
+  * */
+  //  至今，我们已经学习了非常多的调用函数的方式，
+  //  圆括号直接调用
+  //  对象打点调用
+  //  定时器调用
+  //  事件处理函数调用
+  //  数组枚举调用
+  //他们体现的不同点就是函数的上下文不同，他们的this不一样
+  //  现在我们要学习新的函数调用方法！用new运算符调用函数
+  //  function fun() {
+  //    alert('你好')
+  //      this.name = 'xiaoming';
+  //      this.age = 12
+  //  }
+  //  new fun();  //你好
+  //使用new操作符以后,会经历四步走：
+  //  1、函数会秘密创建一个空对象
+  //  2、函数会将自己的上下文设置成这个空对象即所有语句中的this表示这个空对象
+  //  3、执行函数所有语句
+  //  4、即使没有return语句，也会返回函数的上下文
+  
+  //所以，遇到new操作符，马上想起四步走
+  //  到此为止，我们发现，呦！这个new运算符能够调用函数，还能返回一个对象
+//  function People(name, age, sex) {
+//    this.name = name;
+//    this.age = age;
+//    this.sex = sex;
+//  }
+//  //这些都是类的实例，相当于按照类的要求实例
+//  var xiaoming = new People('小明', 21, '男');
+//  var xiaohong = new People('小红', 21, '女');
+//  var xiaoqing = new People('小青', 22, '女');
+//  console.log(xiaoming);
+//  console.log(xiaohong);
+//  console.log(xiaoqing);
+  //我们说，People就可以认为是一个"类"，xiaoming，xiaohong，xiaoqing都是这个类的"实例"
+  //js中没有类的概念，我们这里只是和java、c++、c#做一个类比，js中只有构造函数，当一个
+  // 函数被new操作符调用的时候，这个函数就是一个构造函数，它总是能返回一类的具有相同属性群的对象
+  //所以这个函数很神奇，像一个模子，在制作类似的对象，
+  //为了提醒其他程序猿，这是一个必须用new调用的函数，换句话说提醒别人这是一个构造函数，这类函数的名字
+  //必须首字母大写
+  
+//  People('xiaoming',12,'nan')
+//  alert(age)
+  //由于我们直接调用了构造函数，此时就是标准的函数直接加圆括号调用，函数里的this就是window
+  
+  //构造函数就是一个普通函数，里面可以写任何东西，只不过这个函数用new操作符调用执行
+  function Dog(name,age,color,pinzhong,sex,nation) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+    this.pinzhong = pinzhong;
+    if(this.pinzhong == '金毛'|| this.pinzhong=='藏獒'||this.pinzhong=='斑点狗'){
+      this.type = '大型犬';
+    }else if(this.pinzhong == '柯基'||this.pinzhong =='秋田'){
+      this.type = '中型犬';
+    }else if(this.pinzhong == '泰迪'|| this.pinzhong == '萨摩'||this.pinzhong == '土狗'){
+      this.type = '小型犬';
+    }else {
+      this.type = '未知体型'
+    }
+    this.sex = sex;
+    this.nation = nation;
+    this.isChengnian = this.age >= 8 ? true : false;
+  }
+  var snoopy = new Dog('史努比',3,'白色','斑点狗','公狗','美国');
+  console.log(snoopy);
+</script>
+</body>
+</html>
