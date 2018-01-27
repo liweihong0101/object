@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  //计算机领域，关注两个类的关系，就是看属性群，两个类属性群有相交，但是不完全重合，此时认为两个类没有关系
+  //人类和小学生类有什么关系，小学生是一类人，小学生肯定是人，人拥有的属性和方法，小学生一定有，但是反过来，小学生
+  //有的属性，人没有，小学生的能力人没有
+  //此时计算机中小学生类继承（extend）了人类
+  //A继承了B，此时需要意识到：
+  /*
+   *  A拥有B的全部属性和方法
+   *  A的属性群比B大
+   *  A丰富了B，A把B变得更具体，范围更小
+   */
+//  javascript来实现这样的两个类，People 类、students 类
+
+  function People(name, age, sex) {
+    this.name = name;
+    this.age = age;
+    this.sex = sex
+  }
+  People.prototype.shuohua =  function (str) {
+    alert(str)
+  };
+  function Students(name, age, sex, xuehao, banji) {
+//    this.name = name;
+//    this.age = age;
+//    this.sex = sex
+    People.apply(this,arguments);
+    this.xuehao = xuehao;
+    this.banji = banji;
+  }
+  Students.prototype = new People();
+  Students.prototype.xuexi = function () {
+    alert('学习')
+  };
+  
+  var xiaoming = new Students('韩梅梅',21,'女',10001,'大一');
+
+  xiaoming.shuohua('你好');
+  console.log(xiaoming.name);
+  console.log(xiaoming.age);
+  console.log(xiaoming.sex);
+  console.log(xiaoming.xuehao);
+  console.log(xiaoming.banji);
+  xiaoming.xuexi()
+</script>
+</body>
+</html>

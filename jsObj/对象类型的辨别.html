@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+  /*
+  * 任何一个构造函数的prototype都有一个constructor属性，指向构造函数
+  * */
+  //  function People(){}
+  //  var xiaoming = new People();
+  //  console.log(People.prototype.constructor === People);
+  //  console.log(xiaoming.constructor === People);
+  function People(name) {
+    this.name = name;
+  }
+  
+  People.prototype = {
+    "haha": function () {
+      alert('我是' + this.name + '哈哈哈')
+    }
+  }
+  var xiaoming = new People('小明');
+  xiaoming.haha();
+  console.log(xiaoming.constructor === People)
+</script>
+</body>
+</html>

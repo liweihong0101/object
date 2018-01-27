@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+//  instanceof 运算符
+//  这个运算符用来检测某一个对象是不是某一个构造函数的实例
+  function People(name) {
+    this.name = name;
+  }
+  var xiaoming = new People();
+console.log(xiaoming instanceof People);
+console.log(xiaoming instanceof Object);
+
+//本质上 如果函数的prototype在对象的原型链上，此时返回true，反之返回false
+</script>
+</body>
+</html>
