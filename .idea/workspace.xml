@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cde77ce-d806-40d5-8fda-5bc84922db75" name="Default" comment="png">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/images/15.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/images/16.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/images/17.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/images/18.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/instanceof运算符.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/对象类型的辨别.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/组件开发.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jsObj/继承.html" />
+    <list default="true" id="7cde77ce-d806-40d5-8fda-5bc84922db75" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,7 +19,7 @@
       <file leaf-file-name="protype.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsObj/protype.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="1334">
               <caret line="46" column="3" lean-forward="false" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
               <folding />
             </state>
@@ -41,7 +29,7 @@
       <file leaf-file-name="对象类型的辨别.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsObj/对象类型的辨别.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
+            <state relative-caret-position="783">
               <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
               <folding />
             </state>
@@ -51,7 +39,7 @@
       <file leaf-file-name="instanceof运算符.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsObj/instanceof运算符.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="493">
               <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="28" />
               <folding />
             </state>
@@ -61,8 +49,8 @@
       <file leaf-file-name="继承.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsObj/继承.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+            <state relative-caret-position="1305">
+              <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -71,7 +59,7 @@
       <file leaf-file-name="组件开发.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsObj/组件开发.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
+            <state relative-caret-position="2117">
               <caret line="86" column="15" lean-forward="false" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
               <folding>
                 <element signature="e#1132#1388#0" expanded="false" />
@@ -83,13 +71,16 @@
       <file leaf-file-name="carousel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jsObj/carousel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="116" column="32" lean-forward="true" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+            <state relative-caret-position="29">
+              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding>
+                <element signature="e#104#870#0" expanded="false" />
+                <element signature="e#922#2131#0" expanded="false" />
                 <element signature="e#1060#1177#0" expanded="false" />
                 <element signature="e#1247#1367#0" expanded="false" />
                 <element signature="e#1396#1474#0" expanded="false" />
                 <element signature="e#1977#2031#0" expanded="false" />
+                <element signature="e#2190#2934#0" expanded="false" />
                 <element signature="e#2402#2503#0" expanded="false" />
                 <element signature="e#2546#2658#0" expanded="false" />
                 <element signature="e#2991#3305#0" expanded="false" />
@@ -147,8 +138,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="301" />
+    <option name="x" value="235" />
+    <option name="y" value="194" />
     <option name="width" value="1169" />
     <option name="height" value="429" />
   </component>
@@ -189,8 +180,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +190,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
@@ -222,20 +213,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.组件开发.html">
+  <component name="RunManager">
     <configuration name="对象类型的辨别.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/object/jsObj/对象类型的辨别.html" />
     <configuration name="继承.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/object/jsObj/继承.html" />
     <configuration name="组件开发.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/object/jsObj/组件开发.html" />
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.对象类型的辨别.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.继承.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.组件开发.html" />
-    </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.组件开发.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.继承.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.对象类型的辨别.html" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.对象类型的辨别.html" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +238,8 @@
       <updated>1516955678795</updated>
       <workItem from="1516955680002" duration="2099000" />
       <workItem from="1517014902839" duration="1090000" />
-      <workItem from="1517018035715" duration="12012000" />
+      <workItem from="1517018035715" duration="12854000" />
+      <workItem from="1517039041359" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="png">
       <created>1516957046541</created>
@@ -277,11 +262,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517014941709</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="png">
+      <created>1517034348838</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1517034348839</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15201000" />
+    <option name="totallyTimeSpent" value="16044000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -293,14 +285,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="301" width="1169" height="429" extended-state="0" />
-    <editor active="true" />
+    <frame x="235" y="194" width="1169" height="429" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24978614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24978614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32704404" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -312,6 +302,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -332,6 +323,71 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jsObj/protype.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="46" column="3" lean-forward="false" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsObj/对象类型的辨别.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsObj/instanceof运算符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsObj/继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsObj/组件开发.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2494">
+          <caret line="86" column="15" lean-forward="false" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+          <folding>
+            <element signature="e#1132#1388#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsObj/carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding>
+            <element signature="e#104#870#0" expanded="false" />
+            <element signature="e#922#2131#0" expanded="false" />
+            <element signature="e#1060#1177#0" expanded="false" />
+            <element signature="e#1247#1367#0" expanded="false" />
+            <element signature="e#1396#1474#0" expanded="false" />
+            <element signature="e#1977#2031#0" expanded="false" />
+            <element signature="e#2190#2934#0" expanded="false" />
+            <element signature="e#2402#2503#0" expanded="false" />
+            <element signature="e#2546#2658#0" expanded="false" />
+            <element signature="e#2991#3305#0" expanded="false" />
+            <element signature="e#3362#3679#0" expanded="false" />
+            <element signature="e#3738#4275#0" expanded="false" />
+            <element signature="e#4343#4430#0" expanded="false" />
+            <element signature="e#4488#4601#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jsObj/protype.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -363,7 +419,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsObj/protype.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="1334">
           <caret line="46" column="3" lean-forward="false" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
           <folding />
         </state>
@@ -371,7 +427,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsObj/对象类型的辨别.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
+        <state relative-caret-position="783">
           <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
           <folding />
         </state>
@@ -379,7 +435,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsObj/instanceof运算符.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="493">
           <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="28" />
           <folding />
         </state>
@@ -387,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsObj/继承.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        <state relative-caret-position="1305">
+          <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -397,13 +453,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="8445" column="4" lean-forward="false" selection-start-line="8445" selection-start-column="4" selection-end-line="8445" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jsObj/组件开发.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="2117">
           <caret line="86" column="15" lean-forward="false" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
           <folding>
             <element signature="e#1132#1388#0" expanded="false" />
@@ -413,13 +468,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsObj/carousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="116" column="32" lean-forward="true" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+        <state relative-caret-position="29">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding>
+            <element signature="e#104#870#0" expanded="false" />
+            <element signature="e#922#2131#0" expanded="false" />
             <element signature="e#1060#1177#0" expanded="false" />
             <element signature="e#1247#1367#0" expanded="false" />
             <element signature="e#1396#1474#0" expanded="false" />
             <element signature="e#1977#2031#0" expanded="false" />
+            <element signature="e#2190#2934#0" expanded="false" />
             <element signature="e#2402#2503#0" expanded="false" />
             <element signature="e#2546#2658#0" expanded="false" />
             <element signature="e#2991#3305#0" expanded="false" />
